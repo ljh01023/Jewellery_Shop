@@ -1,0 +1,49 @@
+.mainCon {
+  display: flex;
+  gap: 4rem;
+  margin: 50px 0;
+}
+.btns {
+  max-width: 250px;
+  width: 10%;
+  min-width: 200px;
+}
+.btns button {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  padding: 1rem;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btns button:hover {
+  border-bottom: 2px solid var(--point-c1);
+}
+
+.listCon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 800px) {
+  .listCon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .mainCon {
+    flex-direction: column;
+  }
+  .btns {
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+  }
+  .listCon {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

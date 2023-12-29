@@ -1,0 +1,44 @@
+.bannerCon {
+  margin: 50px 0;
+}
+.BCard {
+  position: relative;
+  padding-top: 30%;
+  border-radius: 2rem;
+  overflow: hidden;
+  color: white;
+}
+.BCard img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+.BCard > div {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 2;
+}
+.BCard > div:nth-of-type(1) {
+  font-size: 1.2em;
+}
+
+.BCard button {
+  /* background-color: transparent; */
+  border: 1px solid white;
+  outline: none;
+  padding: 1rem 2rem;
+  color: white;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .BCard {
+    padding-top: 50%;
+  }
+}

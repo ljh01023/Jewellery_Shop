@@ -1,0 +1,96 @@
+.cartPage > h2 {
+  font-size: 3rem;
+}
+.cartPage > p {
+  color: var(--gray3);
+  padding-top: 16px;
+  padding-bottom: 50px;
+}
+.cartPage p strong {
+  color: var(--gray1);
+  font-weight: bold;
+}
+.cartPage p span {
+  font-weight: bold;
+  color: var(--point-c1);
+}
+
+.cartList > li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid var(--gray4);
+  border-radius: 2rem;
+  box-shadow: 0 0 5px var(--gray4);
+  transition: 0.3s;
+  margin-bottom: 1.6rem;
+}
+.cartList > li:hover {
+  box-shadow: 0px 5px 5px var(--gray4);
+}
+
+.cartList .img {
+  border-radius: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.cartList .img img {
+  width: 120px;
+}
+
+.cartList .title {
+  padding: 0 2rem;
+  width: 30%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cartList .price,
+.cartList .totalPrice {
+  width: 120px;
+  text-align: right;
+}
+
+.cartList .btnDel {
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+}
+.cartList .btnDel path {
+  fill: var(--gray3);
+  transition: 0.3s;
+}
+.cartList .btnDel:focus path,
+.cartList .btnDel:hover path {
+  fill: var(--point-c1);
+}
+
+.counter button {
+  border: 1px solid var(--gray4);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+.counter button:focus,
+.counter button:hover {
+  background-color: var(--point-c1);
+}
+.counter button:disabled {
+  background-color: var(--gray4);
+  opacity: 0.5;
+}
+.counter span {
+  display: inline-block;
+  padding: 1rem;
+}
+
+@media (max-width: 900px) {
+  .cartList > li {
+    justify-content: flex-end;
+  }
+  .cartList .title {
+    width: calc(100% - 125px) !important;
+  }
+}

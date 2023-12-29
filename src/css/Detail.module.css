@@ -1,0 +1,56 @@
+.detailCon {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 50px;
+}
+.detailCon .img {
+  width: 45%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.detailCon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.detailCon .desc {
+  flex: 1;
+}
+.detailCon .desc strong,
+.detailCon .desc span {
+  display: block;
+  line-height: 2;
+}
+.detailCon .desc strong {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.detailCon .desc span {
+  color: var(--point-c1);
+}
+
+.count {
+  padding: 1rem 0;
+}
+
+.count button {
+  font-size: 1.2em;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.count button:hover {
+  color: var(--point-c1);
+}
+
+.count .btnAdd {
+  background-color: var(--gray3);
+  color: white;
+  transition: 0.3s;
+}
+.count .btnAdd:hover {
+  background-color: var(--point-c1);
+  color: white;
+}
